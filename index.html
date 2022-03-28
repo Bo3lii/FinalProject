@@ -1,69 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Line</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" type="icon/x-icon" href="./assets/img/Logo.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/Logo.png" type="image/x-icon">
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <!-- custom css -->
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbar-brand text-light mt-5">
+            <div class="display-5 font-weight-bold">Blood Line</div>
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light pl-4">Home</a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="./sign.html" target="_blank" class="nav-link text-light pl-4">Account</a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="./appiontment.html" target="_blank" class="nav-link text-light pl-4">Appointment</a>
+            </li>
+            
+            <li class="nav-item w-100">
+                <a href="./reques.html" target="_blank" class="nav-link text-light pl-4">Request</a>
+            </li>
+
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light pl-4">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="p-4 my-container">
+
+        <div class="tooooop">
+            <button class="btn my-4" id="menu-btn">BLood Line</button>
+         </div>
    
-    <ul id="navColor">
-        <li>    </li>
-       <li><img src="./assets/img/Logo.png" alt="Logo" id="img"></li>
-        <li style="margin-top: 30px;"> Blood Line </li>
-        <li> <a href="./sign.html" target="_blank"> Get started</a></li>
-         <li><a href="./reques.html" target="_blank"> Appointment</a></li>
-         <li> <a href="./reques.html" target="_blank"> request</a></li>
-      <li style="margin-top: 300px;"> Contact us</span>  </li>
-    </ul>
 
-<div class="container">
-    
-</div>
+        <h1 style="text-align: right;">مشروع (BLood Line) لتسهيل عملية التبرع بالدم</h1>
+        <p class="text-dark" style="text-align: center; font-size: 30px;">نحن حريصون على تسهيل عملية التبرع بالدم وطلب الدم وجعل الاتصال بين المرضى و المستشفيات و بنك الدم اكثر كفاءة</p>
+        <p class="text-dark" style="font-size: 30px; text-align: center;" > We are dedicated to facilitate the process of blood donation and blood 
+            request and make the connection between the patients, donors, hospitals and the blood bank more efficient.
+            </p>
+    </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="container">
-    <div class="child">
-    <h5 style="margin-left: 700px; font-size: 20px;"> مرحبا</h5>
-    <p class="text"> مشكلة تأخر اجرتء عملية جراحية لمريض بسبب عدم وجود متبرع بالدم في وقت سريع 
-        واخذه للوقت هي مشكلة شائعة تعاني منها المحتمعات و من هنا تنطلق فكرة خط الدم الذي يهدف لتسريع العملية الجراحية عبر اختصار الوقت المستغرق لايجاد المتبرع, شاهد الفيديو و تعرف كيفية عمل هذا الموقع المساعد
-    </p>
-<h5 style="margin-right: 700px; font-size: 20px;"> hello </h5>
-    <p class="text"> 
-        The problem of delaying surgery for a patient due to the lack of a blood donor in a quick time and taking time is a common problem that societies suffer from, and from here the idea of ​​a blood line that aims to speed up the surgery by shortening the time it takes to find a donor, watch the video and know how this helpful site works .</p>
-    </div>
-    </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./js/js.js"> </script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script>
+        var menu_btn = document.querySelector("#menu-btn")
+        var sidebar = document.querySelector("#sidebar")
+        var container = document.querySelector(".my-container")
+        menu_btn.addEventListener("click", () => {
+            sidebar.classList.toggle("active-nav")
+            container.classList.toggle("active-cont")
+        })
+    </script>
 </body>
+
 </html>
