@@ -5,15 +5,15 @@ body{
     --color-error: #cc3333;
     --color-success: #4bb544;
     border-radius: 4px;
-
+ 
     margin: 0;
     height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
-     background: rgb(201,71,71);
-    background: linear-gradient(90deg, rgba(201,71,71,1) 42%, rgba(154,61,61,1) 92%); 
+     background: rgb(160, 54, 54);
+    background:  rgba(154,61,61,1 92%); 
     background-size: cover;
 }
 
@@ -22,9 +22,9 @@ body{
     max-width: 400px;
     margin: 1rem;
     padding: 2rem;
-    box-shadow: 0 0 40px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 2);
     border-radius:var(--border-radius);
-    background:rgb(210, 190, 190);
+    background:rgb(199, 191, 191);
 }
 
 .container, .form__input, .form__button{
@@ -49,6 +49,6 @@ body{
     color: var(--color-success);
 }
 
-.form__message--success{
+.form__message--error{
     color: var(--color-error);
 }
