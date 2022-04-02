@@ -221,16 +221,55 @@ body{
     left: 78px;
     transition: all 0.5s ease;
 }
-
-
-.home_content .text{
-    font-size: 25px;
-    font-weight: 500;
-    color: #1d1b31;
-    margin: 12px ; 
-}
-
 .sidebar.active ~ .home_content {
     width: calc(100%-240px);
     left: 240px;
 }
+.sidebar.active ~ .container{
+    width: calc(100%-240px);
+    left: 240px;
+}
+/* .container{
+    height: 100vh;
+    width: calc(100%-78px);
+    left: 78px;
+    transition: all 0.5s ease;
+   display: flex;
+   justify-content: center;
+  align-items: center;
+  background: rgb(201,71,71);
+  background: linear-gradient(90deg, rgba(201,71,71,1) 42%, rgba(154,61,61,1) 92%);
+}
+.welcoming{
+    height: 70vh;
+    width: 30vw;
+    background: rgb(216, 216, 216);
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#welcomingImg{
+ width: 60%;
+ height: 30vh ;
+}
+
+#welcomingP{
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+
+
+
+
+.signCard{
+    height: 70vh;
+    width: 30vw;
+    background: rgb(216, 216, 216);
+} */
+
+
+
+
+

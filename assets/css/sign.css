@@ -1,10 +1,23 @@
 body{
+    --color-praimary: #009579;
+    --color-praimary-dark: #007f67;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    border-radius: 4px;
+
     margin: 0;
-    padding: 0;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: rgb(201,71,71);
+    background: linear-gradient(90deg, rgba(201,71,71,1) 42%, rgba(154,61,61,1) 92%);
+
+
 }
 
-.signIN{
-background-color: rgb(138, 43, 43);
-height: 50%;
-width: 100%;
+.container{
+
 }
