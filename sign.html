@@ -12,26 +12,107 @@
 <body>
 
 <div class="container">
+
+                                      <!-- SIGN IN     -->
+
     <form class="form" id="login">
-<h1 class="form__tital">login</h1>
-<div class="form__message form__message--error"> Incorrect username or password. </div>
-<div class="form__input-group">
-    <input type="text" class="form__input"  autofocus placeholder="username or email">
- <div class="form__input-error-message">This is an error message</div>
+
+    <h1 class="form__tital">login</h1>
+
+    <div class="form__message form__message--error"></div>
+
+
+    <div class="form__input-group">
+
+    <input type="text" class="form__input"  autofocus placeholder="Civil Id or Email">
+
+    <div class="form__input-error-message"></div>
+
 </div>
 
-<div class="form__input-group">
-    <input type="password" class="form__input"  autofocus placeholder="password">
- <div class="form__input-error-message"></div>
-</div>
-<button class="form__button" type="submit"> continue </button>
 
-<p class="form__text">
+<div class="form__input-group">
+
+    <input type="password" class="form__input"   autofocus placeholder="password">
+    <div class="form__input-error-message"></div>
+
+    </div>
+
+    <button class="form__button" type="submit"> continue </button>
+
+    <p class="form__text">
+
     <a class="form__Link" href="#" id="linkCreateAccount"> Don't have Account? Create ccount</a>
-</p>
+    </p>
+
+</form>
+
+
+                                       <!-- SIGN UP -->
+
+<form class="form form--hidden" id="createAccount">
+
+    <h1 class="form__tital">Create Account</h1>
+
+    <div class="form__message form__message--error"></div>
+
+
+<div class="form__input-group">
+
+    <input type="text" class="form__input"  autofocus placeholder="Email Address">
+
+    <div class="form__input-error-message"></div>
+
+</div>
+
+<div class="form__input-group">
+
+    <input type="text" class="form__input"   autofocus placeholder="Username">
+
+    <div class="form__input-error-message"></div>
+
+    </div>
+    <div class="form__input-group">
+
+        <input type="number" class="form__input"   autofocus placeholder="Civil Id">
+
+        <div class="form__input-error-message"></div>
+    
+        </div>
+
+    
+<div class="form__input-group">
+
+    <input type="password" class="form__input"   autofocus placeholder="Password">
+
+    <div class="form__input-error-message"></div>
+
+    </div>
+
+    <div class="form__input-group">
+
+        <input type="password" class="form__input"   autofocus placeholder=" Confirm Password">
+
+        <div class="form__input-error-message"></div>
+    
+        </div>
+        
+
+    <button class="form__button" type="submit"> continue </button>
+
+    <p class="form__text">
+
+    <a class="form__Link" href="#" id="linkLogin">Already have account? Sign in</a>
+    </p>
+
 </form>
 
 </div>
+
+
+
+
+
 
 
     <script src="./assets/js/js.js"></script>
