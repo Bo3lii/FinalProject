@@ -12,12 +12,43 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    background: rgb(201,71,71);
-    background: linear-gradient(90deg, rgba(201,71,71,1) 42%, rgba(154,61,61,1) 92%);
-
-
+     background: rgb(201,71,71);
+    background: linear-gradient(90deg, rgba(201,71,71,1) 42%, rgba(154,61,61,1) 92%); 
+    background-size: cover;
 }
 
 .container{
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px;
+    border-radius:var(--border-radius);
+    background:rgb(210, 190, 190);
+}
 
+.container, .form__input, .form__button{
+    font: 500 1rem 'Quicksand', sans-serif;
+    
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success{
+    color: var(--color-success);
+}
+
+.form__message--success{
+    color: var(--color-error);
 }
