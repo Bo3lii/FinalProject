@@ -124,3 +124,8 @@ transform: scale(0.98);
 .form__Link:hover{
 text-decoration: underline;
 }
+
+#btn-link{
+    text-decoration: none;
+    color: #fff
+}
