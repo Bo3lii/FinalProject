@@ -309,7 +309,7 @@ body{
 }
 .form__input{
     display: block;
-    width: 100%;
+    width: 130%;
     padding: 0.75rem;
     box-sizing: border-box;
     border-radius: var(--border-radius);
