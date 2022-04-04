@@ -1,81 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BLood Line</title>
-    <link rel="stylesheet" href="./assets/css/bar.css">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./assets/css/appoin.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="./assets/img/IMG-0696.jpg">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
 
-                <div class="logo_name">BloodLine</div>
-            </div>
-            <i class='bx bx-menu' id="btn"></i>
+    <div class="container">
+    <form action="#" class="form">
+    <h1 class="text-center"> Donater Informations</h1>
+
+     <!-- progress bar -->
+    <div class="progressbar">
+
+    <div class="progress" id="progress"></div>
+
+    <div class="progress-step progress-step-active" data-tital="Informations"></div>
+
+    <div class="progress-step" data-tital="History"></div>
+
+    <div class="progress-step" data-tital="Appointment"></div>
+
+
+    </div>
+
+
+
+
+    <!-- first form  -->
+
+        <div class="form-step form-step-active">
+
+        <div class="input-group">
+        <input type="text" name="Email" id="Email" autofocus placeholder="Email">
         </div>
 
-        <ul class="nav-list" >
-            <li>
-                <a href="./index.html">
-                    <i class='bx bx-home-alt-2'></i>
-                    <span class="links_name"> Home</span>
-                </a>
-                 <span class="tooltip"> Home</span> 
-            </li>
+        <div class="input-group">
+        <input type="password" name="Password" id="Password" autofocus placeholder="Password">
+        </div>
 
-            <li>
-                <a href="./sign.html" target="_blank">
-                    <i class='bx bx-user'></i>
-                    <span class="links_name"> Account</span>
-                </a>
-                <span class="tooltip"> get started</span> 
-            </li>
+        <div class="input-group">
+        <input type="number" name="Civil" id="Civil" autofocus placeholder="Civil Id">
+        </div>
+
+        <div class="input-group">
+        <input type="text" name="BLood" id="BLood" autofocus placeholder="Blood Type ">
+        </div>  
+
+        <div class="">
+        <a href="#" class="btn btn-next width-50 ml-auto"> Next </a>
+
+    </div>
+    </div>
+
+
+      <!-- second form -->
+
+        <div class="form-step">
+
+        <div class="input-group">
+        <label for="lastDonation"> Last Donation</label>
+        <input type="number" name="lastDonation" id="lastDonation">
+        </div>
+    
+        <div class="input-group">
+        <label for="upcomingDonation"> Upcoming Donation</label>
+        <input type="number" name="upcomingDonation" id="upcomingDonation">
+        </div>
+    
+        <div class="input-group">
+        <label for="lastBloodTest"> Last Blood Test</label>
+        <input type="number" name="lastBloodTest" id="lastBloodTest">
+        </div>
+    
             
-            <li>
-
-                <a href="#">
-                    <i class='bx bxs-calendar'></i>
-                    <span class="links_name"> Appointment</span>
-                </a>
-                 <span class="tooltip"> Appointment</span> 
-            </li>
-           
-            <li>
-                <a href="./reques.html" target="_blank">
-                    <i class='bx bx-plus-medical'></i>
-                    <span class="links_name"> Request</span>
-                </a>
-                <span class="tooltip"> request</span> 
-            </li>
-           
-            <li>
-                <a href="#" target="_blank">
-                    <i class='bx bx-chat' ></i>
-                    <span class="links_name"> Contact </span>
-                </a>
-                 <span class="tooltip"> Contact</span>
-            </li>
-
-        </ul>
-        <div class="profile_content">
-            <div class="profile">
-                <div class="profile_details">
-                     <img src="./assets/img/Personal pic.JPG" alt="me"> 
-                    <div class="name_job">
-                        <div class="name"> Aws Alhaddad</div>
-                        <div class="job"> Web dev student</div>
-                    </div>
-                </div>
-                <i class='bx bx-log-out' id="log_out"></i>
-            </div>
+        <div class="btns-group">
+        <a href="#" class="btn btn-prev"> Previous </a>
+        <a href="#" class="btn btn-next"> Next </a>
         </div>
-    </div>
-    <div class="home_content">
-        <div class="text"> Home content</div>
-    </div>
+    
+    
+        </div>
 
-    <script src="./assets/js/js.js"></script>
+
+
+         <!-- second form -->
+
+         <div class="form-step">
+
+            <div class="input-group">
+            <label for="appointmentDate"> Set Appointment Date</label>
+            <input type="number" name="appointmentDate" id="appointmentDate">
+            </div>
+        
+            <div class="input-group">
+            <label for="time"> Set Date Time</label>
+            <input type="date" name="time" id="time">
+            </div>
+        
+                
+            <div class="btns-group">
+            <a href="#" class="btn btn-prev"> Previous </a>
+            <input type="submit" value="Submit" class="btn">
+            </div>
+        
+        
+            </div>
+
+            </form>
+
+            </div>
+    
+    <script src="./assets/js/appoi.js"></script>
 </body>
 </html>

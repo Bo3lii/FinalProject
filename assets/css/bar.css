@@ -13,6 +13,13 @@ body{
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+
+    --color-praimary: #009579;
+    --color-praimary-dark: #007f67;
+    --color-secondary: #252c6a;
+    --color-error: #8a3c3c;
+    --color-success: #4bb544;
+    --border-radius: 4px;
 }
 
 .sidebar{
@@ -252,35 +259,104 @@ body{
 .welcoming{
     height: 100vh;
     width: 100%;
-    background: rgb(216, 216, 216);
+    background: #fff;
     margin-right: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin-left: 40px;
 }
-#welcomingImg{
- width: 60%;
- height: 30vh ;
-}
-
-#welcomingP{
-    font-family: sans-serif;
-    margin-bottom: 50px;
-}
-
-
-
-
 .contactCard{
     height: 70vh;
     width: 60vw;
-    background: rgb(156, 67, 67);
-    
-    border-radius: 12px;
+    /* background: rgb(156, 67, 67); */
+    background: #ac4040;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     border-radius: 12px;
 } 
 
+#welcomingImg{
+ width: 30%;
+ height: 30vh ;
+  margin-top: 4rem;
+ /* margin-left: 4rem;  */
+  margin-right: 50px; 
+}
 
+.container, .form__input, .form__button{
+    font: 500 1rem 'Quicksand', sans-serif;
+    
+}
+
+.form > *:first-child{
+    margin-top: 10px;
+}
+
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__tital{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.form__input-group{
+    margin-bottom: 1rem;
+}
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 2px solid #b8b8b8;
+    outline: none;
+    background: #c5c2c2;
+    transition: background 0.2s, border-color 0.2s;
+    margin-right: 40px;
+    height: 40px;
+}
+.form__input:focus{
+    border-color:rgb(117, 117, 117);
+    background: #fff;
+    
+}
+.form__button{
+    width: 130%;
+    height: 70px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-praimary);
+    margin-bottom: 30px;
+}
+
+.form__button:hover{
+    background: var(--color-praimary-dark);
+}
+
+.form__button:active{
+transform: scale(0.98);
+}
+
+.form__text{
+    text-align: center;
+}
+
+
+#message_text{
+    height: 10vh;
+
+}
 
 
 
