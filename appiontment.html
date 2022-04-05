@@ -23,6 +23,7 @@
 
     <div class="progress-step" data-tital="Appointment"></div>
 
+    <div class="progress-step" data-tital="Done"></div>
 
     </div>
 
@@ -31,7 +32,7 @@
 
     <!-- first form  -->
 
-        <div class="form-step form-step-active">
+        <div class="form-step form-step-active" id="formStep1 ">
 
         <div class="input-group">
         <input type="text" name="Email" id="Email" autofocus placeholder="Email">
@@ -46,7 +47,7 @@
         </div>
 
         <div class="input-group">
-        <input type="text" name="BLood" id="BLood" autofocus placeholder="Blood Type ">
+        <input type="text" name="BLood" id="BLood" autofocus placeholder="Blood Type">
         </div>  
 
         <div class="">
@@ -58,21 +59,18 @@
 
       <!-- second form -->
 
-        <div class="form-step">
+        <div class="form-step" id="formStep2">
 
         <div class="input-group">
-        <label for="lastDonation"> Last Donation</label>
-        <input type="number" name="lastDonation" id="lastDonation">
+        <input type="number" name="lastDonation"  id="lastDonation" autofocus placeholder="Last Donation">
         </div>
     
         <div class="input-group">
-        <label for="upcomingDonation"> Upcoming Donation</label>
-        <input type="number" name="upcomingDonation" id="upcomingDonation">
+        <input type="number" name="upcomingDonation"  id="upcomingDonation" autofocus placeholder=" Upcoming Donation">
         </div>
     
         <div class="input-group">
-        <label for="lastBloodTest"> Last Blood Test</label>
-        <input type="number" name="lastBloodTest" id="lastBloodTest">
+        <input type="number" name="lastBloodTest" id="lastBloodTest" autofocus placeholder=" Last Blood Test ">
         </div>
     
             
@@ -86,24 +84,37 @@
 
 
 
-         <!-- second form -->
+         <!-- third form -->
 
-         <div class="form-step">
+         <div class="form-step" id="formStep3">
 
             <div class="input-group">
-            <label for="appointmentDate"> Set Appointment Date</label>
-            <input type="number" name="appointmentDate" id="appointmentDate">
+            <input type="number" name="appointmentDate" id="appointmentDate" autofocus placeholder=" Appointment Date  ">
             </div>
         
             <div class="input-group">
-            <label for="time"> Set Date Time</label>
-            <input type="date" name="time" id="time">
+            <input type="date" name="time" id="time" autofocus placeholder=" Time ">
             </div>
         
                 
             <div class="btns-group">
             <a href="#" class="btn btn-prev"> Previous </a>
-            <input type="submit" value="Submit" class="btn">
+            <a href="#" class="btn btn-next"> Submit </a>
+            </div>
+        
+        
+            </div>
+
+            <!-- done page  -->
+            
+         <div class="form-step" >
+
+          <h1> Appointment Was Set Successfully</h1>
+        
+                
+            <div class="btns-group">
+                <a href="./index.html" class="btn btn-next" style="text-decoration: none;"> Back to home page  </a>
+            
             </div>
         
         

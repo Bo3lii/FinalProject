@@ -1,81 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BLood Line</title>
-    <link rel="stylesheet" href="./assets/css/bar.css">
+    <title>Request</title>
+    <link rel="stylesheet" href="./assets/css/request.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="./assets/img/IMG-0696.jpg">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
 
-                <div class="logo_name">BloodLine</div>
-            </div>
-            <i class='bx bx-menu' id="btn"></i>
+    <div class="container">
+    <form action="#" class="form">
+    <h1 class="text-center"> Request Form </h1>
+
+     <!-- progress bar -->
+    <div class="progressbar">
+
+    <div class="progress" id="progress"></div>
+
+    <div class="progress-step progress-step-active" data-tital="Informationst"></div>
+
+    <div class="progress-step" data-tital="Request"></div>
+
+    <div class="progress-step" data-tital="History"></div>
+
+    <div class="progress-step" data-tital="Done"></div>
+
+    </div>
+
+
+
+
+    <!-- first form  -->
+
+        <div class="form-step form-step-active" id="formStep1 ">
+
+        <div class="input-group">
+        <input type="text" name="Email" id="Email" autofocus placeholder="Hospital Name">
         </div>
 
-        <ul class="nav-list" >
-            <li>
-                <a href="./index.html">
-                    <i class='bx bx-home-alt-2'></i>
-                    <span class="links_name"> Home</span>
-                </a>
-                 <span class="tooltip"> Home</span> 
-            </li>
+        <div class="input-group">
+        <input type="text" name="Password" id="Password" autofocus placeholder="Dr.Name">
+        </div>
 
-            <li>
-                <a href="./sign.html" target="_blank">
-                    <i class='bx bx-user'></i>
-                    <span class="links_name"> Account</span>
-                </a>
-                <span class="tooltip"> get started</span> 
-            </li>
+        <div class="input-group">
+        <input type="date" name="Civil" id="Civil" autofocus placeholder="Surgary Date">
+        </div>
+
+        <div class="">
+        <a href="#" class="btn btn-next width-50 ml-auto"> Next </a>
+
+    </div>
+    </div>
+
+
+      <!-- second form -->
+
+        <div class="form-step" id="formStep2">
+
+        <div class="input-group">
+        <input type="number" name="lastDonation"  id="lastDonation" autofocus placeholder="Hospital Name">
+        </div>
+    
+        <div class="input-group">
+        <input type="text" name="upcomingDonation"  id="upcomingDonation" autofocus placeholder=" Blood Type ">
+        </div>
+    
+        <div class="input-group">
+        <input type="number" name="lastBloodTest" id="lastBloodTest" autofocus placeholder=" Quantity">
+        </div>
+    
             
-            <li>
-
-                <a href="./appiontment.html" target="_blank">
-                    <i class='bx bxs-calendar'></i>
-                    <span class="links_name"> Appointment</span>
-                </a>
-                 <span class="tooltip"> Appointment</span> 
-            </li>
-           
-            <li>
-                <a href="#" target="_blank">
-                    <i class='bx bx-plus-medical'></i>
-                    <span class="links_name"> Request</span>
-                </a>
-                <span class="tooltip"> request</span> 
-            </li>
-           
-            <li>
-                <a href="#" target="_blank">
-                    <i class='bx bx-chat' ></i>
-                    <span class="links_name"> Contact </span>
-                </a>
-                 <span class="tooltip"> Contact</span>
-            </li>
-
-        </ul>
-        <div class="profile_content">
-            <div class="profile">
-                <div class="profile_details">
-                     <img src="./assets/img/Personal pic.JPG" alt="me"> 
-                    <div class="name_job">
-                        <div class="name"> Aws Alhaddad</div>
-                        <div class="job"> Web dev student</div>
-                    </div>
-                </div>
-                <i class='bx bx-log-out' id="log_out"></i>
-            </div>
+        <div class="btns-group">
+        <a href="#" class="btn btn-prev"> Previous </a>
+        <a href="#" class="btn btn-next"> Next </a>
         </div>
-    </div>
-    <div class="home_content">
-        <div class="text"> Home content</div>
-    </div>
+    
+    
+        </div>
 
-    <script src="./assets/js/js.js"></script>
+
+
+         <!-- third form -->
+
+         <div class="form-step" id="formStep3">
+
+            <div class="input-group">
+                <label for="Last-Request-Date">  Last Request Date </label>    
+            <input type="date" name="appointmentDate" id="appointmentDate" autofocus placeholder="Last Request Date  ">
+            </div>
+        
+            <div class="input-group">
+            <label for="today's-date">  Today's Date </label>
+            <input type="date" name="time" id="time" autofocus placeholder=" Today's Date ">
+            </div>
+        
+                
+            <div class="btns-group">
+            <a href="#" class="btn btn-prev"> Previous </a>
+            <a href="#" class="btn btn-next"> Submit </a>
+            </div>
+        
+        
+            </div>
+
+            <!-- done page  -->
+            
+         <div class="form-step" >
+
+          <h1> Request Was Sent Successfully</h1>
+        
+                
+            <div class="btns-group">
+                <a href="./index.html" class="btn btn-next" style="text-decoration: none;"> Back to home page  </a>
+            
+            </div>
+        
+        
+            </div>
+
+            </form>
+
+            </div>
+    
+    <script src="./assets/js/request.js"></script>
 </body>
 </html>

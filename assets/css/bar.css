@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -231,16 +232,139 @@ body{
     background: none;
 }
 .home_content{
-    position: absolute;
+    position: relative;
     height: 100%;
     width: calc(100%-78px);
     left: 78px;
     transition: all 0.5s ease;
+    text-align: center;
 }
 .sidebar.active ~ .home_content {
     width: calc(100%-240px);
     left: 240px;
 }
+
+
+/* content */
+  
+.mainImg{
+    width: 100%;
+    height: 90vh;
+    background-image: url(/assets/img/hos.jpeg);
+    background-size: cover;
+}
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 25%;
+    left: 100px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
+  }
+
+  .top-left-light {
+    position: absolute;
+    top: 40%;
+    left: 100px;
+    
+    font-size: 20px;
+  }
+
+  .top-left-light2 {
+    position: absolute;
+    top: 45%;
+    left: 100px;
+    font-size: 20px;
+  }
+
+  .top-left-light3{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    font-size: 20px;
+  }
+
+  .btn-lin-register{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    font-size: 90px;
+    width: 30%;
+  }
+  .btn-lin-app{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    font-size: 90px;
+    width: 50%;
+  }
+
+
+#btn-register-main{
+    width: 30%;
+    background:rgb(171, 52, 52);
+    color: #fff;
+    border-radius: 2px;
+}
+
+#btn-register-main:hover{
+    background: #7a2c2c;
+    cursor: pointer;
+}
+#btn-register-main:active{
+transform: scale(0.98);
+}
+
+#btn-app-main{
+    width: 20%;
+    background:rgb(171, 52, 52);
+    color: #fff;
+    border-radius: 2px;
+}
+
+#btn-app-main:hover{
+    background: #7a2c2c;
+    cursor: pointer;
+}
+
+#btn-app-main:active{
+    transform: scale(0.98);
+    }
+
+.bottom-bar{
+    position: absolute;
+    margin-left: 4rem;
+    width: 85%;
+    height: 20vh;
+    background: #c2c2c2;
+    top: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+#message{
+    margin-top: 40px;
+    width: 30vw;
+    height: 5vh;
+    border: #c2c2c2 solid;
+}
+
+#btn-send{
+    height: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
 .sidebar.active ~ .container{
     width: calc(100%-240px);
     left: 240px;
